@@ -5,39 +5,80 @@ p,
 a,
 h2 {
   font-family: "Playfair", serif;
+  color: whitesmoke;
 }
 
 /* HEADER */
 #logo {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.8rem;
-  border: 2px solid black;
-  display: inline;
-  padding: 5px;
-  margin-top: 50px;
+  border: 4px solid whitesmoke;
+  padding: 30px 70px;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 600px;
+  width: fit-content; 
+ 
+}
+
+/*BODY*/
+body{
+  background-color: rgb(143, 190, 144);
+  display:grid;
+  grid-template-columns: 1fr,1fr,1fr;
+  grid-template-rows: 150px,150px,150px;
+}
+
+/*SUBMIT BUTTON*/
+input[type=submit]{
+background-color: white;
+padding:5px 10px;
+margin: 4px 2px;
+display:grid;
+grid-template-columns: 1fr,1fr,1fr;
+grid-template-rows: 150px,150px,150px;
+
+}
+
+/*MY LINKS*/
+.navbar {
+  position:absolute;
+  top:0;
+  right:0;
+  padding:10px;
+  display: flex;
+  margin-left: 20px;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+ 
 }
+
 a {
-  color: black;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  margin:50px;
+  
+  
 }
-/* MAIN */
+/* MAIN 
 .main-img {
   width: 30%;
   height: 30%;
 }
-
-/*CATEGORY*/
+*/
+/*CATEGORY
 .category-image {
   width: 30%;
   height: 30%;
-}
+}*/
 
 /*FOOTER*/
 footer {
+  color:whitesmoke;
   margin-top: 1rem;
-  border-top: 1px solid black;
+  border-top: 1px solid whitesmoke;
 }
