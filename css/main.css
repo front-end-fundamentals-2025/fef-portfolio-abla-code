@@ -46,7 +46,7 @@ input[type="submit"] {
   right: 0;
   padding: 10px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 ul {
@@ -59,7 +59,7 @@ a {
   color: whitesmoke;
   font-size: 1.3rem;
   margin: 70px;
-  margin-left: -35px;
+  /* margin-left: -35px; */
   text-decoration: none;
 }
 
@@ -68,12 +68,12 @@ a {
   width: 50%;
 }
 
-.category-container {
+/* .category-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-left: 25%;
-}
+} */
 .category-container img:hover {
   filter: brightness(80%);
 }
@@ -91,52 +91,67 @@ footer {
   border-top: 1px solid whitesmoke;
 }
 
-@media (max-width: 500px) {
-  nav a li {
-    font-size: 0.3rem;
+/*Responsive*/
+@media screen and (max-width: 631px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: start;
+    
   }
   a {
     margin-left: 0.1vw;
-    text-align: center;
+    margin: auto
+    
   }
   #logo {
-    font-size: 250%;
+    font-size: auto;
+  }
+  p{
+    font-size: auto;
   }
   h1 {
-    font-size: small;
-  }
-
-  .category-image{
-    width: 30%;
+    size-adjust: auto;
   }
 }
 
-/* @media (max-width: 496px) {
-  a {
-    font-size: 0.5rem;
+
+
+/*Becomes 2 columns*/
+@media screen and (min-width: 631px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
-
-@media (max-width: 430px) {
-  a {
-    font-size: 0.8rem;
-  }
-} */
 
 /* animation */
-.animation{
+.animation {
   padding: 50%;
   background-image: url(../img/logga.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: slideshow 10s infinite;
+  animation: slideshow 14s infinite;
 }
 
-@keyframes slideshow{
-  0% { background-image:url(../img/logga.png); }
-  25% { background-image:url(../img/logo2.png); }
-  50% { background-image:url(../img/logo3.png); }
-  75% { background-image:url(../img/logo4.png); }
+@keyframes slideshow {
+  0% {
+    background-image: url(../img/logga.png);
+  }
+  25% {
+    background-image: url(../img/logo2.png);
+  }
+  50% {
+    background-image: url(../img/logo3.png);
+  }
+  75% {
+    background-image: url(../img/logo4.png);
+  }
 }
 /* animation */
